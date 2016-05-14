@@ -1,5 +1,8 @@
-import React from 'react';
+/**
+ *
+ */
 
+import React from 'react';
 import App from './containers/App';
 import Home from './containers/Home';
 import About from './containers/About';

@@ -1,3 +1,7 @@
+/**
+ *
+ */
+
 /* eslint-disable no-console, no-use-before-define */
 
 import path from 'path';

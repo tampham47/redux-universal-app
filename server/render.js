@@ -1,3 +1,7 @@
+/**
+ *
+ */
+
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { Router, RouterContext, match } from 'react-router';
@@ -16,7 +20,7 @@ function renderFullPage(html, initialState) {
     <!doctype html>
     <html>
       <head>
-        <title>Redux Universal Example</title>
+        <title>Redux universal boilerplate</title>
       </head>
       <body>
         <div id="app">${html}</div>
@@ -30,6 +34,8 @@ function renderFullPage(html, initialState) {
 }
 
 export default function handleRender(req, res) {
+  console.log('handleRender');
+
   // Query our mock API asynchronously
   fetchCounter(apiResult => {
     // Read the counter from the request, if provided
